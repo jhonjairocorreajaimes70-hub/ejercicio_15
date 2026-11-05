@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box; /* con border-box hacemos que los bordes y paddings se incluyan dentro del tamaño total */
+    margin: 0; /* eliminamos las margenes predeterminadas de los navegadores */
+    padding: 0; /* elimina los paddings predeterminado de los navegadores */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #060606;
+    display: flex; /* activamos el flexbox para organizar los elementos */
+    justify-content: center; /* centramos los elementos de forma horizontal */
+    align-items: center; /* centramos los elementos de forma vertical */
+    height: 100vh; /* hacemos que ocupe toda la altura de la pantalla */
+}
+
+.tarjeta-contenedor {
+    background: rgb(251, 251, 253);
+    padding: 25px;
+    border-radius: 12px; /* redondeamos los bordes */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 420px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 18px;
+}
+
+.contenedor-progreso {
+    margin-bottom: 20px;
+}
+
+.barra-progreso-externa {
+    width: 100%; /* designamos el ancho maximo del elemento */
+    background-color: #e9ecef;
+    border-radius: 6px;
+    height: 8px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.barra-progreso-interna {
+    height: 100%;
+    background-color: #adb5bd;
+    transition: width 0.3s ease; /* animación suave al cambiar de progreso */
+}
+
+.texto-conteo {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    text-align: right;
+}
+
+.caja-flashcard {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* redondeamos los bordes */
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer; /* cambia el cursor a manito para indicar interactividad */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.caja-flashcard:hover {
+    border-color: #888;
+}
+
+.contenido-texto {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between; /* distribuimos los botones a los extremos */
+    align-items: center;
+}
+
+.btn-navegacion {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-navegacion:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-accion {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-accion:hover, .btn-navegacion:not(:disabled):hover {
+    text-decoration: underline;
+}

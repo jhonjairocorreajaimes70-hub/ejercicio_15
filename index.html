@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Definimos que este documento utiliza HTML5 -->
+<html lang="es"> <!-- Abrimos la etiqueta raíz indicando que el idioma es español -->
+<head> <!-- Inicio de la cabecera del documento para configuraciones y enlaces -->
+    <meta charset="UTF-8"> <!-- Establecemos la codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacemos la página adaptable a dispositivos móviles -->
+    <title>tarjetas flash</title> <!-- Título que se muestra en la pestaña del navegador -->
+    
+    <!-- Vinculamos nuestra hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Cargamos React y ReactDOM desde CDN para que el navegador los lea directamente -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Cargamos Babel para que interprete la sintaxis JSX de React -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head> <!-- Fin de la cabecera -->
+<body> <!-- Inicio del cuerpo visible de la página web -->
+
+    <!-- Contenedor raíz donde React va a inyectar y renderizar toda la aplicación -->
+    <div id="root"></div>
+
+    <!-- Vinculamos nuestro archivo principal de lógica en React indicando que es de tipo babel -->
+    <script type="text/babel" src="script.js"></script>
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin de la etiqueta raíz HTML -->
